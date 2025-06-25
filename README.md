@@ -25,8 +25,7 @@ Permite añadir, marcar como completadas y eliminar tareas, con animaciones visu
 
 ## Vista previa
 
-![Vista previa de la lista de tareas](preview.png) <!-- Puedes agregar una imagen de ejemplo si lo deseas -->
-
+https://miguelcuadros2020.github.io/list_homework/list_homework.html
 ---
 
 **Desarrollado para fines educativos.**
