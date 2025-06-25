@@ -65,7 +65,7 @@ ul{
 }
 
 li{
-    padding: 10px;
+    padding: 10px 15px;
     border-bottom: 1px solid #eee;
     transition: background-color 0.3s;
     overflow: auto;
@@ -112,4 +112,62 @@ button{
         width: calc(100% - 22px);
     }
     
+}
+
+i.completed {
+    background-color: #4caf50 !important;
+    transition: background-color 0.5s;
+    color: #fff;
+}
+
+li.completed:hover {
+    background-color: rgba(128,128,128,0.3) !important;
+    transition: background-color 0.3s;
+}
+
+/* Círculo con chulo animado */
+.circle-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #4caf50;
+    margin-right: 0.5em;
+    animation: popIn 0.4s;
+    vertical-align: middle;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); }
+    80% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+li.completed span {
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-left: 15px;
+}
+
+/* Animación para el botón Done */
+button.done {
+    background-color: #2196f3;
+    transition: background-color 0.3s, color 0.3s;
+}
+li.completed button.done {
+    text-align: end;
+    background-color: #388e3c;
+    color: #fff;
+}
+button.done:hover {
+    background-color: #757575;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
 }
