@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     elements.form.addEventListener('submit', addScriptToList);
 
-    function deleteScript(event) {
+    function deleteScript(event) {        
         if (event.target.classList.contains('delete')) {
-            const li = event.target.parentElement;
+            const li = event.target.parentElement.parentElement;
             elements.scriptList.removeChild(li);
         }
     };
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animación y lógica para Done/Undone
     function toggleDone(event) {
         if (event.target.classList.contains('done')) {
-            const li = event.target.parentElement;
+            const li = event.target.parentElement.parentElement;
             const span = li.querySelector('span');
 
             // Si ya está done, deshacer
